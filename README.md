@@ -30,9 +30,24 @@ Repository for python workshop at atla 2019 annual conference.
     * visualize data
     * slice data
     * modify data
+* Load data - read_csv
+* Prepare data - fillna
+* Transform data - lists and dictionaries
+* Write to files - with open (create a directory?)
+* Make a script to run from command line
+    * functions
+    * __name__
+    * arguments
+* What about multiple subject values in the data? - see ist9077
 
-#### Compare data across different files
+#### Match ebook collections
 
-#### Work with files in directories on machine
+* Match collections by ISBN
+* Fuzzy match on title
+
+#### Combine usage stats files
+
+* Combine sheets with pandas
+* Visualize usage stats with jupyter notebooks
 
 ### What Problems Do You Want to Solve?
