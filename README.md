@@ -48,6 +48,6 @@ Repository for python workshop at atla 2019 annual conference.
 #### Combine usage stats files
 
 * Combine sheets with pandas
-* Visualize usage stats with jupyter notebooks
+* Visualize usage stats with [jupyter notebooks](https://mybinder.org/v2/gh/iliff/atla-2019/master)
 
 ### What Problems Do You Want to Solve?
