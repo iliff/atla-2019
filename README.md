@@ -10,12 +10,12 @@ Repository for python workshop at atla 2019 annual conference.
 * Create a new project
     * File > New Project
     * Give project a name and confirm path
-    * Project Interpreter - Choose new virtual environment (check to see if comes stock in PC community)
+    * Project Interpreter - Choose new virtual environment
     * Download [files for workshop](https://github.com/iliff/atla-2019/archive/master.zip)
     * Extract files
     * Copy files to project path
-* Open a file
-* Create a new file
+* Open a new python file
+* Create a new python file
 * Run Hello World!
 
 ### Example Library Tasks with Python
