@@ -5,8 +5,8 @@ Repository for python workshop at atla 2019 annual conference.
 
 ### Setting Up the Environment
 
-* Install Python 3
-* Install PyCharm IDE
+* [Install Python 3](https://www.python.org/downloads/)
+* [Install PyCharm IDE](https://www.jetbrains.com/pycharm/download/)
 * Create a new project
     * File > New Project
     * Give project a name and confirm path
