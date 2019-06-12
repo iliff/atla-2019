@@ -5,6 +5,7 @@ per record. The main purpose of this is to see the structure of a python script 
 import sys
 import pandas as pd
 from dcxml import simpledc
+import os
 # pip install xlrd
 
 
@@ -29,10 +30,8 @@ def main():
     except IndexError:
       os.makedirs('xml', exist_ok=True)
       xml_dir = 'xml'
-  
-    
-    
-    df = pd.read_excel(import_file)
+
+    df = pd.read_csv(import_file)
     df = df.fillna('')
     list_of_dicts = df.to_dict(orient='records')
     for dictionary in list_of_dicts:
