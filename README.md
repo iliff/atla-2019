@@ -45,9 +45,14 @@ Repository for python workshop at atla 2019 annual conference.
 * Match collections by ISBN
 * Fuzzy match on title
 
-#### Combine usage stats files
+#### Find related files
 
-* Combine sheets with pandas
-* Visualize usage stats with [jupyter notebooks](https://mybinder.org/v2/gh/iliff/atla-2019/master)
+* Work with file system using python
+* Code across different operating systems
+
+#### Data visualization
+
+* Use pandas to prepare data for viz
+* Use bokeh to generate web viz of usage stats
 
 ### What Problems Do You Want to Solve?
