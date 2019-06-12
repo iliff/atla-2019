@@ -2,7 +2,7 @@ import pandas as pd
 from bokeh.plotting import figure, show
 from bokeh.io import output_notebook
 from bokeh.models import ColumnDataSource
-from bokeh.palettes import Spectral7
+# from bokeh.palettes import Spectral7
 from bokeh.models.tools import HoverTool
 
 df = pd.read_csv('alma_loans_by_date.csv')  # read data to dataframe
@@ -18,7 +18,7 @@ source = ColumnDataSource(new_df)
 p = figure(plot_height=500, plot_width=950, x_axis_type='datetime')
 
 # create line glyph
-p.line(x='Loan Date', y='Loans (In House + Not In House)', line_width=2, source=source, color=Spectral7[0],
+p.line(x='Loan Date', y='Loans (In House + Not In House)', line_width=2, source=source,
       legend='Total Loans')
 
 # add metadata to the visualization
