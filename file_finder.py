@@ -20,6 +20,15 @@ PDFS_DIR = os.path.join('.', 'sample_directory', 'sub_dir', 'pdfs')
 EBOOKS_DIR = os.path.join('.', 'sample_directory', 'ebooks')
 
 
+'''
+Walking directory paths 
+-----------------------
+
+- Using os.walk to walk directory paths 
+- Assigning variables that you don't need. 
+- base names and extensions 
+
+'''
 def get_path_names(ext, path):
     print(ext)
     path_dict = {}
