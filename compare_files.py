@@ -42,3 +42,17 @@ def title_matcher(row, title_dict_list, title_dict):
       matches.append((title['ISBN'], title['Title']))
   titles = '; '.join(m[1] for m in matches)
   return titles
+
+ebooks2_df['Title_Match'] = ebooks2_df.apply(lambda x: title_matcher(x, title_dict_list, title_dict), axis=1)  #, axis=1)
+
+match_df = ebooks2_df[ebooks2_df['Title_Match'] != '']
+
+match_df[['Title', 'Title_Match', 'ISBN']]
+
+duplicate[['Title_x', 'Title_y']]
+
+ebooks2_df.iloc[10]
+
+# Finding the duplicate
+ebooks1_df[ebooks1_df['Title'].str.contains('Christian Theology')]
+
