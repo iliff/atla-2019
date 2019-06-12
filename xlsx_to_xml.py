@@ -10,24 +10,35 @@ from dcxml import simpledc
 
 def dictionary2xml(dictionary):
     '''takes a dictionary and creates an xml string from the object, and the file name'''
-    new_dict = {}
+    
+    file_name = dictionary['identifiers'] + '.xml'
+    
     for key, value in dictionary.items():
-        list_value = [value]
-        new_dict[key] = list_value
-    xml = simpledc.tostring(new_dict)
-    file_name = dictionary['identifiers']
+        dictionary[key] = [value]
+    xml = simpledc.tostring(dictionary)
+    
     return xml, file_name
 
 
 def main():
     '''The main function will hand the file input and output for the script'''
     import_file = sys.argv[1]
+    
+    try:
+      xml_dir = sys.argv[2]
+    except IndexError:
+      os.makedirs('xml', exist_ok=True)
+      xml_dir = 'xml'
+  
+    
+    
     df = pd.read_excel(import_file)
     df = df.fillna('')
     list_of_dicts = df.to_dict(orient='records')
     for dictionary in list_of_dicts:
         xml, file_name = dictionary2xml(dictionary)
-        with open(file_name + '.xml', mode='w', encoding='utf8') as fp:
+        file_path = os.path.join(xml_dir, file_name)
+        with open(file_path, mode='w', encoding='utf8') as fp:
             fp.write(xml)
 
 
